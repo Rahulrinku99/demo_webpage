@@ -1,0 +1,128 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login red</title>
+	<style>
+		div
+		{
+			background-color: black;
+			text-align: right;
+			color: white;
+			padding: 20px;
+
+		}
+		form
+		{
+			align-content: center;
+			background: linear-gradient(120de, black,gray);
+		}
+		select
+		{
+			width: 170px;
+		}
+		
+		.button {
+            background-color: whitesmoke; /* Green */
+            border: none;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            }
+        .button3 {padding: 10px 90px;}
+	</style>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'login' %}">Login</a></li>
+            <li><a href="{% url 'register' %}">Register</a></li>
+            <li><a href="{% url 'aboutus' %}">About us</a></li>
+        </ul>
+    </div>
+
+<div>
+	<form>
+		<fieldset>
+			<table align="center" height="450px">
+		<tr>
+			<td>
+				<label>Name :</label>
+				<input type="text">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Email  :</label>
+				<input type="text">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Password  :</label>
+				<input type="Password">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Phone Number  :</label>
+				<input type="text">
+			</td>
+		</tr>
+		<tr>
+					<td>
+						<label>Gender :</label>
+						<input type="radio" name="a1">Male</input>
+					    <input type="radio" name="a1">Female</input>
+					    <input type="radio" name="a1">Others</input>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Language  :</label>
+						<select>
+							<option>English</option>
+							<option>Tamil</option>
+							<option>Kannada</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+			<td>
+				<label>Phone Number  :</label>
+				<input type="text">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Zip Code  :</label>
+				<input type="text">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>About  :</label>
+				<textarea rows="2" cols="20"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<button class="button button3"><b>Register</b></button>
+			</td>
+		</tr>
+	</table>
+		</fieldset>
+	</form>
+	
+</div>
+</body>
+</html>
